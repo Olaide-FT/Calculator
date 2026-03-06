@@ -8,6 +8,6 @@ function clearInput(input){
     output.value = "";
 }
 
-function total(input){
+function total(){
     output.value = (eval(output.value));
 }
