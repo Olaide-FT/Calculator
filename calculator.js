@@ -4,7 +4,7 @@ function addInput(input){
     output.value += input;
 }
 
-function clearInput(input){
+function clearInput(){
     output.value = "";
 }
 
