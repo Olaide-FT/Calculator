@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body class=" min-h-screen flex items-center justify-center bg-black ">
+    <div class="max-w-[400px] w- bg-black p-6 rounded-3xl">
+        <input type="text" id="output" class="text-right text-4xl text-white bg-black border-none mb-6 px-4 w-60">
+        
+        <div class="text-white grid grid-cols-4 gap-4">
+            <button onclick="clearInput()" class="bg-gray-300 rounded-full w-10 h-10">AC</button>
+            <button onclick="addInput('+/-')" class="bg-gray-300 rounded-full w-10 ">+/-</button>
+            <button onclick="addInput('%')" class="bg-gray-300 rounded-full w-10">%</button>
+            <button onclick="addInput('/')" class="bg-orange-400 rounded-full w-10">/</button>
+            
+            <button onclick="addInput(7)" class="bg-gray-500 rounded-full w-10 h-10">7</button>
+            <button onclick="addInput(8)"class="bg-gray-500 rounded-full w-10 h-10">8</button>
+            <button onclick="addInput(9)"class="bg-gray-500 rounded-full w-10 h-10">9</button>
+            <button onclick="addInput('*')" class="bg-orange-400 rounded-full w-10 h-10">*</button>
+
+            <button onclick="addInput(4)"class="bg-gray-500 rounded-full w-10 h-10">4</button>
+            <button onclick="addInput(5)"class="bg-gray-500 rounded-full w-10 h-10">5</button>
+            <button onclick="addInput(6)"class="bg-gray-500 rounded-full w-10 h-10">6</button>
+            <button onclick="addInput('-') " class="bg-orange-400 rounded-full w-10 h-10">-</button>
+
+            <button onclick="addInput(1)"class="bg-gray-500 rounded-full w-10 h-10">1</button>
+            <button onclick="addInput(2)"class="bg-gray-500 rounded-full w-10 h-10">2</button>
+            <button onclick="addInput(3)"class="bg-gray-500 rounded-full w-10 h-10">3</button>
+            <button onclick="addInput('+')" class="bg-orange-400 rounded-full w-10 h-10">+</button>
+
+            <button onclick="addInput()"class="bg-gray-500 rounded-full w-10 h-10"><i class="fa-solid fa-calculator"></i></button>
+            <button onclick="addInput(0)"class="bg-gray-500 rounded-full w-10 h-10">0</button>
+            <button onclick="addInput('.')" class="bg-gray-500 rounded-full w-10 h-10">.</button>
+            <button onclick="total('=')" class="bg-orange-400 rounded-full w-10 h-10">=</button>
+
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
